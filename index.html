@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilas Veteran Certificate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="favicon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="./t.jpeg" alt="Bilas Veteran Logo">
+        <h4>Bilas Veteran Training Certificate </h4>
+        <h2> <a href="https://www.youtube.com/@bilasknowledgehub5863" target="_blank"
+                rel="noopener noreferrer">BILAS KNOWLEDGE HUB</a></h2>
+    </header>
+    <main>
+        <label for="name">Type Your Name:</label>
+        <input required type="text" name="Name" autocomplete="name" placeholder="Your Name" id="name" minlength="3"
+            maxlength="16">
+            <label for="training">Training Program:</label>
+             <input required type="text" name="training" placeholder="Training Name" id="training" minlength="10"
+                maxlength="30">
+            <label for="Cert">certificate Number:</label>
+            <input required type="text" name="Cert" placeholder="Certificate Number" id="cert">
+            <label for="date1">Date From:</label>
+            <input required type="text" name="date1" id="dat">
+            <label for="date">Date To:</label>
+            <input required type="text" name="datee" id="date">
+            <label for="persist">Persisted:</label>
+            <input type="date" id="per"><br>
+        <Button id="submitBtn">Get Certificate</Button>
+        
+    </main>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
